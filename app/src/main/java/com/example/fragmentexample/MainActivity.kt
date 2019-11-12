@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        val fragment = TwoFragment()
+
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-
-        val fragment = TwoFragment()
         fragmentTransaction.add(R.id.main_container, fragment)
         fragmentTransaction.commit()
 
